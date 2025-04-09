@@ -1,0 +1,31 @@
+<html>
+
+    <head>
+        <title>
+            Hello Wold
+        </title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+    </head>
+
+    <body style="background-color: lightblue;">
+
+
+        <img id="donut1" src="imgs/donut_01.png" width="200" height="200"/>
+        <img id="donut2" src="imgs/donut_02.png" width="200" height="200"/>
+        <img id="donut3" src="imgs/donut_03.png" width="200" height="200"/>
+
+        <script>
+            var sound1 = new buzz.sound("sounds/glitch1.mp3");
+            var sound2 = new buzz.sound("sounds/glitch2.mp3");
+            var sound3 = new buzz.sound("sounds/glitch3.mp3");
+
+            window.onload = function() {
+                document.getElementById('donut1').addEventListener('click', function() {sound1.play();});
+            };
+
+        </script>
+
+    </body>
+
+</html>
